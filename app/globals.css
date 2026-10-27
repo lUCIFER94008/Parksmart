@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #09090b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #09090b;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom parking slot colors */
+.slot-available {
+  background-color: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.slot-occupied {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.slot-reserved {
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.slot-maintenance {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+  color: #4b5563;
+}
