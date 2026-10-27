@@ -54,7 +54,7 @@ export function TestimonialsSection() {
                 </div>
                 <Quote className="h-6 w-6 text-emerald-600/30 mb-2" />
                 <p className="text-sm text-slate-700 leading-relaxed italic">
-                  "{item.quote}"
+                  &ldquo;{item.quote}&rdquo;
                 </p>
               </div>
 
